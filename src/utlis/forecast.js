@@ -14,7 +14,8 @@ const forecast = (lat, lon, callback) => {
             console.log('But it feels like ' + body.current.feelslike + ' degrees.')
             callback(undefined, {
                 temperature: body.current.temperature,
-                feelslike: body.current.feelslike
+                feelslike: body.current.feelslike,
+                weather_descriptions: body.current.weather_descriptions,
             })
         }
     

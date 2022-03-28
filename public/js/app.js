@@ -38,7 +38,7 @@ weatherForm.addEventListener('submit', (e) => {
             } else {
                 console.log(data.temperature)
                 console.log(data.feelslike)
-                message2.textContent = data.temperature + ' ' + data.feelslike
+                message2.textContent = data.temperature + ' ' + data.feelslike + ' ' + data.weather_descriptions
             }
             })
     })
